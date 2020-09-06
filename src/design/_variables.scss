@@ -1,0 +1,14 @@
+// En aquest document es poden canviar globalment els colors de la pàgina i més endavant altres variables com les fonts
+// IMPORTANT cal importar aquest document a l'inici de tots els altres documents SCSS.
+// @use 'variables' as v
+// Paleta de colors: https://coolors.co/264653-2a9d8f-e9c46a-f4a261-e76f51
+// Com importar variables amb SASS: https://stackoverflow.com/questions/17598996/sass-use-variables-across-multiple-files/61500282#61500282
+
+$navy: #264653;
+$green: #2A9D8F;
+$yellow: #E9C46A;
+$orange: #F4A261;
+$red: #E76F51;
+
+$title-font: "Arial Rounded MT Bold", sans-serif;
+$text-font: 'Montserrat', sans-serif;
