@@ -1,0 +1,30 @@
+@import '../../design/variables';
+
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 50px;
+  .highlight {
+    color: $red;
+  }
+  section {
+    width: 90%;
+    max-width: 1200px;
+  }
+  .welcome {
+    display: flex;
+
+    .slogan {
+      font-size: 6vw;
+      font-weight: 200;
+      margin: 1em 0 0 0;
+    }
+    .enter-button {
+      text-align: right;
+    }
+    .welcome-right {
+      width: 90%;
+    }
+  }
+}

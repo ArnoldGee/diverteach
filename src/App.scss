@@ -1,5 +1,55 @@
 @import './design/variables';
 
-* {
+// Estils globals
+
+body {
   font-family: $text-font;
+  box-sizing:border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0px;
+  font-size: 16px;
+}
+a {
+  color: inherit; 
+  text-decoration: inherit;
+}
+
+*:focus {
+  outline: none;
+}
+
+// Classes globals
+
+.navy {
+  background-color: $navy;
+  
+}
+.green {
+  background-color: $green;
+  &:hover, &:focus {
+    background-color: white;
+    color: $green;
+    border: solid $green 1px;
+  }
+}
+.yellow {
+  background-color: $yellow;
+}
+.orange {
+  background-color: $orange;
+}
+.red {
+  background-color: $red;
+}
+.cream {
+  background-color: $cream;
+}
+
+// Estils d'App.js
+
+.app {
+  .header-space {
+    height: 80px;
+  }
 }

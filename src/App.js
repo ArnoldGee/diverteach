@@ -9,13 +9,13 @@ import './App.scss';
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <Header />
+      <div className="header-space"></div>
       <Switch>
         <Route path="/dashboard" component={Dashboard} />
         <Route path="/" component={LandingPage} />
       </Switch>
-      Hello World!
     </div>
   );
 }
