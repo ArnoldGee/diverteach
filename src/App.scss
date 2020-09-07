@@ -4,11 +4,14 @@
 
 body {
   font-family: $text-font;
+  
+  margin: 0px;
+  font-size: 16px;
+}
+* {
   box-sizing:border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  margin: 0px;
-  font-size: 16px;
 }
 a {
   color: inherit; 

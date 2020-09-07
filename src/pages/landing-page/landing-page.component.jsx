@@ -133,7 +133,7 @@ const LandingPage = () => (
             alt=""
           />
           <h3>
-            Carla{' '}
+            Carla
             <span role="img" aria-label="">
               👩🏻‍🎨
             </span>

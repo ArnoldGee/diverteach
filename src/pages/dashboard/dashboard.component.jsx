@@ -1,6 +1,13 @@
 import React from 'react'
+
+import DashboardMenu from '../../components/dashboard-menu/dashboard-menu.component'
+
 import './dashboard.styles.scss'
 
-const Dashboard = () => (<div className="dashboard">I am a dashboard!</div>)
+const Dashboard = () => (
+<div className="dashboard">
+  <DashboardMenu />
+</div>
+)
 
 export default Dashboard;
