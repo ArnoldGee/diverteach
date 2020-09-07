@@ -7,4 +7,4 @@ Superpowers for creative teachers! 🦸 ✨ An all-in-one, hassle-free classr
 ## Our Team
 👨🏻‍💻 Senior Developer & Team Org. | 🦸🏻‍♀️ UI Designer | 👩🏻‍🎨 Illustrator
 -------------------|-----|----
-[Arnau Gómez](https://www.linkedin.com/in/arnau-g%C3%B3mez-903b49187/) | [Beatriz Córdova](https://www.linkedin.com/in/beatriz-c%C3%B3rdoba-cruz-236080168/) | Carla Gámez
+[Arnau Gómez](https://www.linkedin.com/in/arnau-g%C3%B3mez-903b49187/) | [Beatriz Córdova](https://www.linkedin.com/in/beatriz-c%C3%B3rdoba-cruz-236080168/) | [Carla Gámez](https://www.instagram.com/carlagamezalarcon/)
