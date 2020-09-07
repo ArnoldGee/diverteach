@@ -92,7 +92,6 @@ const LandingPage = () => (
             className="team-img"
             src={require('./foto-arnau.png')}
             alt=""
-            className="team-img"
           />
           <h3>
             Arnau{' '}
@@ -112,7 +111,7 @@ const LandingPage = () => (
             className="team-img"
             src={require('./foto-bea.jpeg')}
             alt=""
-            className="team-img"
+
           />
           <h3>
             Bea{' '}
@@ -132,7 +131,6 @@ const LandingPage = () => (
             className="team-img"
             src={require('./foto-carla.png')}
             alt=""
-            className="team-img"
           />
           <h3>
             Carla{' '}
