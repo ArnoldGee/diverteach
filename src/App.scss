@@ -23,7 +23,11 @@ a {
 
 .navy {
   background-color: $navy;
-  
+  &:hover, &:focus {
+    background-color: white;
+    color: $navy;
+    border: solid $navy 1px;
+  }
 }
 .green {
   background-color: $green;
@@ -44,6 +48,11 @@ a {
 }
 .cream {
   background-color: $cream;
+}
+.red-outline {
+  background-color: white;
+  color: $red;
+  border: solid 2px $red;
 }
 
 // Estils d'App.js

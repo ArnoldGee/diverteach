@@ -9,22 +9,94 @@
     color: $red;
   }
   section {
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
+    .section-title {
+      margin: 100px 0 50px 0;
+      text-align: center;
+      color: $red
+    }
+    ol, ul {
+      line-height: 3em;
+      list-style-type: none;
+      .list-icon {
+        margin-right: 10px;
+      }
+    }
   }
   .welcome {
     display: flex;
-
-    .slogan {
-      font-size: 6vw;
-      font-weight: 200;
-      margin: 1em 0 0 0;
+    
+    .welcome-left {
+      width: 50%;
+      .slogan {
+        font-size: 6vw;
+        font-weight: 200;
+        margin: 1em 0 0 0;
+      }
+      .enter-button {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .emoji-before-button {
+          font-size: 30px;
+          margin: 15px;
+      }
     }
-    .enter-button {
-      text-align: right;
     }
     .welcome-right {
-      width: 90%;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .superhero-img {
+        
+        opacity: 0;
+        animation: superhero-fly 1s ease-out 0.5s forwards
+      }
     }
+  }
+  .team {
+    .team-cards{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      .team-card {
+        border-radius: 1em;
+        padding: 20px;
+        margin: 20px;
+        width: 200px;
+        height: 100%;
+        line-height: 2em;
+        box-shadow: 0px 10px 20px grey;
+        text-align: center;
+        .team-img {
+          max-width: 150px;
+          height: auto;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+  .footer {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    .footer-link {
+      color: grey;
+      margin: 20px;
+      font-size: 20px;
+    }
+  }
+}
+
+
+//Animació del superheroi
+@keyframes superhero-fly {
+  0% {
+    transform: translate(100px, 200px);
+  }
+  100%{
+    opacity: 1;
   }
 }
