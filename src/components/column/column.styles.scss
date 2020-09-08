@@ -1,0 +1,19 @@
+@import "../../design/variables";
+
+.dashboard-column {
+  text-align: center;
+
+
+  .column-title{
+    font-size: 16px;
+    font-weight: 200;
+    text-transform: uppercase
+  }
+
+  .droppable-space{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
