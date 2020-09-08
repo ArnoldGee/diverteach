@@ -1,8 +1,10 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
+
 import Button from '../../components/button/button.component';
 import InfoLabel from '../../components/info-label/info-label.component';
+import Footer from '../../components/footer/footer.component';
 
 import './landing-page.styles.scss';
 
@@ -147,22 +149,7 @@ const LandingPage = () => (
         </div>
       </div>
     </section>
-    <footer className="footer">
-      <a
-        className="footer-link"
-        href="https://github.com/ArnoldGee/diverteach"
-        aria-hidden="true"
-      >
-        <i class="fa fa-github"></i>
-      </a>
-      <a
-        className="footer-link"
-        href="https://www.instagram.com/diverteach/"
-        aria-hidden="true"
-      >
-        <i class="fa fa-instagram"></i>
-      </a>
-    </footer>
+    <Footer />
   </div>
 );
 

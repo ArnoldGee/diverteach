@@ -1,6 +1,6 @@
 @import '../../design/variables';
 
-.landing-page {
+.opos{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,17 +17,33 @@
       color: $red
     }
     ol, ul {
+      
       line-height: 3em;
       list-style-type: none;
-      .list-icon {
-        margin-right: 10px;
+      padding-inline-start: 0px;
+      padding-top: -10px;
+      border: solid 3px $green;
+      border-radius: 20px;
+      overflow: hidden;
+      li {
+        
+        margin-left: 0px; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 30px;
+        border-bottom: solid 3px $green;
+        .list-icon {
+          margin: 10px;
+        }
       }
     }
   }
   .welcome {
     display: flex;
-    
+    max-width: 1200px;
     .welcome-left {
+      padding-right: 5%;
       width: 50%;
       .slogan {
         font-size: 6vw;
@@ -41,61 +57,25 @@
         .emoji-before-button {
           font-size: 30px;
           margin: 15px;
+        }
+        &:hover .emoji-before-button {
+          animation: move-around-button 0.5s ease-in-out 0s alternate infinite;
+        }
       }
-      &:hover .emoji-before-button {
-        animation: move-around-button 0.5s ease-in-out 0s alternate infinite;
-      }
-    }
     }
     .welcome-right {
       width: 50%;
       display: flex;
+      padding-left: 5%;
       justify-content: center;
       align-items: center;
-      .superhero-img {
-        
-        opacity: 0;
-        animation: superhero-fly 1s ease-out 0.5s forwards
+      .study-img {
+        width: 100%;
+        height: auto;
       }
     }
   }
-  .team {
-    .team-cards{
-      display:flex;
-      justify-content: center;
-      align-items: center;
-      .team-card {
-        align-self: stretch;
-        border-radius: 1em;
-        padding: 20px;
-        margin: 20px;
-        width: 200px;
-        height: 100%;
-        line-height: 2em;
-        box-shadow: 0px 10px 20px grey;
-        text-align: center;
-        .team-img {
-          max-width: 150px;
-          height: auto;
-          border-radius: 50%;
-        }
-      }
-    }
-  }
-  
 }
-
-
-//Animació del superheroi
-@keyframes superhero-fly {
-  0% {
-    transform: translate(100px, 200px);
-  }
-  100%{
-    opacity: 1;
-  }
-}
-
 // animació de la mà
 @keyframes move-around-button {
   100% {
