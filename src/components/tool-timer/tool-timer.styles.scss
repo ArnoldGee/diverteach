@@ -1,6 +1,6 @@
 .timer {
   height: 200px;
-  width: 500px;
+  width: 550px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -19,6 +19,8 @@
         font-size: 20px;
       }
       .timer-icon {
+        width: 240px;
+        animation: bounce 0.9s ease-in-out infinite;
         // aquí falta afegir l'animació!!!
       }
       .time-container {
@@ -75,3 +77,26 @@
     transform: scale(1.5);
   }
 }
+@keyframes bounce {
+  0%{
+    transform: translateY(0) rotate(5deg);
+  } 
+  20%{
+    transform: translateY(0) rotate(-5deg);
+  }
+  50%{
+    transform: translateY(0) rotate(5deg);
+  }
+  80%{
+    transform: translateY(0) rotate(-5deg);
+  }
+  100% {
+    transform: translateY(0) rotate(5deg);
+  } 
+  40% {
+    transform: translateY(-30px) rotate(5deg);
+  } 
+  60% {
+    transform: translateY(-15px) rotate(5deg);
+  } 
+} 
