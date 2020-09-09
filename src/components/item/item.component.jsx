@@ -2,6 +2,11 @@ import React, { Component } from 'react'
 import {Draggable} from 'react-beautiful-dnd'
 
 import './item.styles.scss'
+import ToolTimer from '../tool-timer/tool-timer.component'
+
+const tools = {
+  timer: <ToolTimer />
+}
 
 export default class Item extends Component {
   render(){
@@ -13,7 +18,10 @@ export default class Item extends Component {
             {...provided.dragHandleProps}
             ref={provided.innerRef}
           >
-            {this.props.item.content}
+            {
+              tools[this.props.item.content] ? tools[this.props.item.content]
+              : this.props.item.content
+            }
           </div>
         )}
       </Draggable>

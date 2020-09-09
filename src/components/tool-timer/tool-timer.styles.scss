@@ -1,0 +1,77 @@
+.timer {
+  height: 200px;
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+  .timer-clock {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .timer-show {
+      display: flex;
+      justify-content: center;
+
+      .controls-button {
+        font-size: 20px;
+      }
+      .timer-icon {
+        // aquí falta afegir l'animació!!!
+      }
+      .time-container {
+        font-size: 100px;
+        font-weight: 200;
+        
+      }
+    }
+  }
+
+  .timer-options {
+    width: 30%;
+
+    h3 {
+      font-size: 16px;
+      font-weight: 800;
+      text-transform: uppercase
+    }
+    .sound-icons-row {
+      display: flex;
+      justify-content: center;
+      .sound-icon {
+        font-size: 30px;
+        padding: 10px;
+        &:hover {
+          animation: magnify-icon 0.3s ease-out forwards
+        }
+      }
+    }
+  }
+
+  .no-format {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    padding: 10px;
+    margin: 0px 20px;
+    &:hover {
+      animation: magnify-icon 0.3s ease-out forwards
+    }
+  }
+  
+}
+
+@keyframes magnify-icon {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
