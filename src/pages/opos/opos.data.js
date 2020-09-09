@@ -2,7 +2,7 @@ const OPOS_LINKS = [
   {
     id: 1, 
     description: "Pàgina oficial sobre oposicions docents de CCOO",
-    link: "http://ensenyament.gencat.cat/ca/arees-actuacio/professors/oposicions/ingres-acces-cossos-docents/aspectes-generals/temaris-cossos-especialitats/",
+    link: "https://educaccio.cat/publica/oposicions-docents/",
     completed: false,
   },
   {
