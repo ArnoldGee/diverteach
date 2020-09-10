@@ -2,7 +2,7 @@ const initialColumnsData = {
   items: {
     'item-1': {id: 'item-1', content: 'timer'},
     'item-2': {id: 'item-2', content: 'I can move!'},
-    'item-3': {id: 'item-3', content: 'And I can move too! Wiiii!'},
+    'item-3': {id: 'item-3', content: 'notes'},
     'item-4': {id: 'item-4', content: 'And I can move too! Wiiii!'},
   },
   columns: {
