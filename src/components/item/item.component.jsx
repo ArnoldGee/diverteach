@@ -4,10 +4,12 @@ import {Draggable} from 'react-beautiful-dnd'
 import './item.styles.scss'
 import ToolTimer from '../tool-timer/tool-timer.component'
 import ToolNotes from '../tool-notes/tool-notes.component'
+import ToolSilence from '../tool-silence/tool-silence.component'
 
 const tools = {
   timer: <ToolTimer />,
-  notes: <ToolNotes />
+  notes: <ToolNotes />,
+  silence: <ToolSilence />,
 }
 
 export default class Item extends Component {

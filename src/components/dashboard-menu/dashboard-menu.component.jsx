@@ -20,7 +20,7 @@ const DashboardMenu = () => (
     </div>
     <div className="dashboard-item">
       <div className="dashboard-icon"><span role="img" aria-label="">🤫</span></div>
-      <div className="dashboard-description">{/*Silenci*/}<InfoLabel/></div>
+      <div className="dashboard-description">Silenci</div>
     </div>
     <div className="dashboard-item">
       <div className="dashboard-icon"><span role="img" aria-label="">📝</span></div>

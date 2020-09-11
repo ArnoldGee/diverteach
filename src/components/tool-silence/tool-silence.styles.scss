@@ -1,0 +1,14 @@
+@import '../../design/variables';
+.tool-silence {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .volume-bar{
+    height: 50px;
+    border-radius: 20px;
+    background-color: $red;
+  }
+  .silence-icon {
+    font-size: 34px;
+  }
+}
