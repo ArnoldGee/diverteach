@@ -62,6 +62,12 @@ a {
 
 .app {
   .header-space {
-    height: 80px;
+    height: 10vh;
+  }
+  .transition-container {
+    background-color: white;
+    position: absolute;
+    width: 100vw;
+    min-height: 90vh;
   }
 }

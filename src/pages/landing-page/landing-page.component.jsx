@@ -2,6 +2,8 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 
+
+
 import Button from '../../components/button/button.component';
 import InfoLabel from '../../components/info-label/info-label.component';
 import Footer from '../../components/footer/footer.component';
@@ -9,6 +11,7 @@ import Footer from '../../components/footer/footer.component';
 import './landing-page.styles.scss';
 
 const LandingPage = () => (
+
   <div className="landing-page">
     <section className="welcome">
       <div className="welcome-left">

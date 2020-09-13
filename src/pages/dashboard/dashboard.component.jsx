@@ -44,20 +44,20 @@ class Dashboard extends Component {
   
   render() {
     return (
-      <DragDropContext onDragEnd={this.onDragEnd}>
-        <div className="dashboard">
-          {this.state.columnOrder.map((columnId) => {
-            const column = this.state.columns[columnId];
-            const items = column.itemIds.map(
-              (itemId) => this.state.items[itemId]
-            );
-            
-            return <Column key={column.id} column={column} items={items} />;
-          })}
+        <DragDropContext onDragEnd={this.onDragEnd}>
+          <div className="dashboard">
+            {this.state.columnOrder.map((columnId) => {
+              const column = this.state.columns[columnId];
+              const items = column.itemIds.map(
+                (itemId) => this.state.items[itemId]
+              );
+              
+              return <Column key={column.id} column={column} items={items} />;
+            })}
 
-          <DashboardMenu />
-        </div>
-      </DragDropContext>
+            <DashboardMenu />
+          </div>
+        </DragDropContext>
     );
   }
 }
