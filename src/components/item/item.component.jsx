@@ -23,8 +23,7 @@ export default class Item extends Component {
             ref={provided.innerRef}
           >
             {
-              tools[this.props.item.content] ? tools[this.props.item.content]
-              : this.props.item.content
+              tools[this.props.item.content]&&tools[this.props.item.content]
             }
           </div>
         )}

@@ -107,7 +107,7 @@ const LandingPage = () => (
           <p>Mestre i desenvolupador</p>
           <a href="https://www.linkedin.com/in/arnau-g%C3%B3mez-903b49187/">
             <Button color="navy">
-              Contracta'm a <i class="fa fa-linkedin" aria-hidden="true"></i>
+              Contracta'm a <i className="fa fa-linkedin" aria-hidden="true"></i>
             </Button>
           </a>
         </div>
@@ -127,7 +127,7 @@ const LandingPage = () => (
           <p>Mestra i dissenyadora</p>
           <a href="https://www.linkedin.com/in/beatriz-c%C3%B3rdoba-cruz-236080168/">
             <Button color="navy">
-              Contracta'm a <i class="fa fa-linkedin" aria-hidden="true"></i>
+              Contracta'm a <i className="fa fa-linkedin" aria-hidden="true"></i>
             </Button>
           </a>
         </div>
@@ -146,7 +146,7 @@ const LandingPage = () => (
           <p>Mestra i il·lustradora</p>
           <a href="https://www.instagram.com/carlagamezalarcon/">
             <Button color="navy">
-              Contracta'm a <i class="fa fa-instagram" aria-hidden="true"></i>
+              Contracta'm a <i className="fa fa-instagram" aria-hidden="true"></i>
             </Button>
           </a>
         </div>
