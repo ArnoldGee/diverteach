@@ -12,11 +12,11 @@ const DashboardMenu = (props) => {
       <div className="dashboard-icon" ><span role="img" aria-label="">⏰</span></div>
       <div className="dashboard-description">Temporitzador</div>
     </div>
-    <div className="dashboard-item" onClick={() => props.addTool("draw")}>
+    <div className="dashboard-item" >
       <div className="dashboard-icon"><span role="img" aria-label="">🎨</span></div>
       <div className="dashboard-description">{/*Pissarra*/} <InfoLabel /></div>
     </div>
-    <div className="dashboard-item" onClick={() => props.addTool("groups")}>
+    <div className="dashboard-item" >
       <div className="dashboard-icon"><span role="img" aria-label="">👥</span></div>
       <div className="dashboard-description">{/*Creador de grups*/}<InfoLabel /></div>
     </div>
