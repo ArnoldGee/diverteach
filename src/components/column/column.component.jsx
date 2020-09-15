@@ -6,6 +6,7 @@ import Item from '../item/item.component';
 import './column.styles.scss'
 
 export default class Column extends Component {
+  
   render() {
     return (
       <div className="dashboard-column">
@@ -18,7 +19,7 @@ export default class Column extends Component {
                 {...provided.droppableProps}
               >
                 {this.props.items.map((item, index) => (
-                  <Item key={item.id} item={item} index={index} />
+                  <Item key={item.id} item={item} index={index} deleteTool={this.props.deleteTool} columnId={this.props.column.id} itemId={item.id}/>
                 ))}
                 {provided.placeholder}
               </div>

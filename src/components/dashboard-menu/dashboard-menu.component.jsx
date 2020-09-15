@@ -5,7 +5,6 @@ import InfoLabel from '../info-label/info-label.component'
 import './dashboard-menu.styles.scss'
 
 const DashboardMenu = (props) => {
-  console.log(props.hello)
   return(
   <div className="dashboard-menu">
     <div className="dashboard-item" onClick={() => props.addTool("timer")}>

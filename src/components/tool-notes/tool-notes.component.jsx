@@ -45,7 +45,7 @@ export default class ToolNotes extends Component {
         content: 'Escriu aquí',
       }])
     }))
-    console.log(this.state)
+
   }
   handleDeleteNote(index) {
     if(this.state.notes.length === 1) {
@@ -60,7 +60,6 @@ export default class ToolNotes extends Component {
   }
 
   handleChangeNote(index) {
-    console.log(index);
     this.setState({
       currentIndex: index,
     });

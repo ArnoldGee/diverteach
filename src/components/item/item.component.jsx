@@ -24,7 +24,7 @@ export default class Item extends Component {
             {...provided.dragHandleProps}
             ref={provided.innerRef}
           >
-            <div className="close-button">×</div>
+            <div className="close-button" onClick={() => this.props.deleteTool(this.props.itemId, this.props.columnId)}>×</div>
             {
               tools[this.props.item.content]&&tools[this.props.item.content]
             }
