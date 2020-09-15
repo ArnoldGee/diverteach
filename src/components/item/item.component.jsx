@@ -16,15 +16,19 @@ export default class Item extends Component {
   render(){
     return(
       <Draggable draggableId={this.props.item.id} index={this.props.index}>
+      
         {provided=>(
+          <div className="item-container">
           <div className="draggable-item"
             {...provided.draggableProps}
             {...provided.dragHandleProps}
             ref={provided.innerRef}
           >
+            <div className="close-button">×</div>
             {
               tools[this.props.item.content]&&tools[this.props.item.content]
             }
+          </div>
           </div>
         )}
       </Draggable>
