@@ -49,7 +49,19 @@ const LandingPage = () => (
           <span className="list-icon" role="img" aria-label="">
             ⏰
           </span>
-          Temporitzador amb sons <InfoLabel />
+          Temporitzador amb sons
+        </li>
+        <li>
+          <span className="list-icon" role="img" aria-label="">
+            🤫
+          </span>
+          Mesurador de silenci
+        </li>
+        <li>
+          <span className="list-icon" role="img" aria-label="">
+            📝
+          </span>
+          Bloc de notes
         </li>
         <li>
           <span className="list-icon" role="img" aria-label="">
@@ -63,27 +75,20 @@ const LandingPage = () => (
           </span>
           Creador de grups automàtic <InfoLabel />
         </li>
-        <li>
-          <span className="list-icon" role="img" aria-label="">
-            🤫
-          </span>
-          Mesurador de silenci <InfoLabel />
-        </li>
       </ul>
       <h3>Programacions més entretingudes</h3>
       <ul>
         <li>
           <span className="list-icon" role="img" aria-label="">
-            🧠
-          </span>
-          Planificador creatiu de seqüències didàctiques
-          <InfoLabel />
-        </li>
-        <li>
-          <span className="list-icon" role="img" aria-label="">
             💪
           </span>
           Els millors recursos per a les oposicions
+        </li>
+        <li>
+          <span className="list-icon" role="img" aria-label="">
+            🧠
+          </span>
+          Planificador creatiu de seqüències didàctiques
           <InfoLabel />
         </li>
       </ul>

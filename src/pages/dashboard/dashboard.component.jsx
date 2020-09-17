@@ -31,18 +31,14 @@ class Dashboard extends Component {
   };
 
   deleteTool = (cardIndex, columnIndex) => {
-    console.log(
-      'card index is ' + cardIndex + ' and column index is ' + columnIndex
-    );
+    
     let newItemsObject = JSON.parse(JSON.stringify(this.state.items));
     delete newItemsObject[cardIndex];
 
     let newItemIdsArray = Array.from(this.state.columns[columnIndex].itemIds);
-    console.log(newItemIdsArray);
     let newItemIdsArray2 = newItemIdsArray.filter(
       (itemTitle) => cardIndex !== itemTitle
-    ); /// Aquí està l'error, en el mètode de filtre!!!
-    console.log(newItemIdsArray);
+    );
     this.setState({
       items: newItemsObject,
       columns: {
