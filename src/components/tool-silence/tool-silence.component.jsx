@@ -90,7 +90,7 @@ export default class ToolSilence extends Component {
         {
           (this.state.volume > 0.06)&&<div className="silence-icon"><span role="img" aria-label="">🤫</span></div>
         }
-        <Button color="green" onClick={this.audioStart} >{!this.state.microphoneActive&&"Activa el micròfon "}<i className="fas fa-microphone"></i></Button>
+        <Button color="green" onClick={this.audioStart} >{!this.state.microphoneActive&&"Activa el mesurador de silenci "}<i className="fas fa-microphone"></i></Button>
       </div>
     )
   }

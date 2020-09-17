@@ -63,23 +63,52 @@ class Dashboard extends Component {
     ) {
       return;
     }
-    const column = this.state.columns[source.droppableId];
-    const newItemIds = Array.from(column.itemIds);
-    newItemIds.splice(source.index, 1); // We reorder the array
-    newItemIds.splice(destination.index, 0, draggableId); // We reorder the array pt. 2
+    const startColumn = this.state.columns[source.droppableId];
+    const finishColumn = this.state.columns[destination.droppableId];
 
-    const newColumn = {
-      ...column,
-      itemIds: newItemIds,
-    };
-    const newState = {
-      ...this.state,
-      columns: {
-        ...this.state.columns,
-        [newColumn.id]: newColumn,
-      },
-    };
-    this.setState(newState);
+    if (startColumn === finishColumn){ // Moving within the same column
+      const newItemIds = Array.from(startColumn.itemIds);
+      newItemIds.splice(source.index, 1); // We reorder the array
+      newItemIds.splice(destination.index, 0, draggableId); // We reorder the array pt. 2
+  
+      const newColumn = {
+        ...startColumn,
+        itemIds: newItemIds,
+      };
+      const newState = {
+        ...this.state,
+        columns: {
+          ...this.state.columns,
+          [newColumn.id]: newColumn,
+        },
+      };
+      this.setState(newState);
+      return;
+    } else { // Moving from one column to another
+      const startItemIds = Array.from(startColumn.itemIds);
+      startItemIds.splice(source.index, 1); // We reorder the array
+      const newStartColumn = {
+        ...startColumn,
+        itemIds: startItemIds
+      }
+      const finishItemIds = Array.from(finishColumn.itemIds);
+      finishItemIds.splice(destination.index, 0, draggableId); // We reorder the array pt. 2
+      const newFinishColumn = {
+        ...finishColumn,
+        itemIds: finishItemIds
+      }
+      const newState = {
+        ...this.state,
+        columns: {
+          ...this.state.columns,
+          [newStartColumn.id]: newStartColumn,
+          [newFinishColumn.id]: newFinishColumn,
+        },
+      };
+      this.setState(newState);
+      return;
+    }
+
   };
 
   render() {

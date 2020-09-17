@@ -2,14 +2,16 @@
 
 .dashboard-column {
   position: relative;
+  
   .test-space {
-    height: 20vh
+    height: 20vh;
+    
   }
   
   .columns-styling {
     overflow: scroll;
     height: 105vh;
-
+    min-width: 100px;
     position: relative;
     margin-top: 20vh;
   }
