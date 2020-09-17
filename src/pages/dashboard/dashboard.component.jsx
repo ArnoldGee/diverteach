@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {DragDropContext} from 'react-beautiful-dnd';
 
+import WelcomeMessage from '../../components/welcome-message/welcome-message.component'
 import Column from '../../components/column/column.component';
 import DashboardMenu from '../../components/dashboard-menu/dashboard-menu.component';
 
@@ -116,21 +117,25 @@ class Dashboard extends Component {
       <DragDropContext onDragEnd={this.onDragEnd}>
         <div className="dashboard">
           <div className="columns-container">
-            {this.state.columnOrder.map((columnId) => {
-              const column = this.state.columns[columnId];
-              const items = column.itemIds.map(
-                (itemId) => this.state.items[itemId]
-              );
+            {
+              this.state.lastIndex ?
+              this.state.columnOrder.map((columnId) => {
+                const column = this.state.columns[columnId];
+                const items = column.itemIds.map(
+                  (itemId) => this.state.items[itemId]
+                );
 
-              return (
-                <Column
-                  key={column.id}
-                  column={column}
-                  items={items}
-                  deleteTool={this.deleteTool}
-                />
-              );
-            })}
+                return (
+                  <Column
+                    key={column.id}
+                    column={column}
+                    items={items}
+                    deleteTool={this.deleteTool}
+                  />
+                );
+              })
+              : <WelcomeMessage />
+            }
           </div>
           <DashboardMenu addTool={this.addTool} />
         </div>
