@@ -42,7 +42,7 @@ const LandingPage = () => (
     </section>
 
     <section className="features">
-      <h2 className="section-title">Què hi ha a DiverTeach?</h2>
+      <h2 className="section-title"data-aos="zoom-in-up">Què hi ha a DiverTeach?</h2>
       <h3>Classes inoblidables</h3>
       <ul className="feature-list">
         <li>
@@ -97,7 +97,7 @@ const LandingPage = () => (
     <section className="team">
       <h2 className="section-title">Qui som?</h2>
       <div className="team-cards">
-        <div className="team-card">
+        <div className="team-card" data-aos="zoom-in-up">
           <img
             className="team-img"
             src={require('./foto-arnau.png')}
@@ -116,7 +116,7 @@ const LandingPage = () => (
             </Button>
           </a>
         </div>
-        <div className="team-card">
+        <div className="team-card" data-aos="zoom-in-up" data-aos-delay="150">
           <img
             className="team-img"
             src={require('./foto-bea.jpeg')}
@@ -136,7 +136,7 @@ const LandingPage = () => (
             </Button>
           </a>
         </div>
-        <div className="team-card">
+        <div className="team-card" data-aos="zoom-in-up" data-aos-delay="300">
           <img
             className="team-img"
             src={require('./foto-carla.png')}

@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 50px;
   .highlight {
     color: $red;
   }
@@ -49,11 +48,12 @@
       }
     }
     .welcome-right {
-      width: 50%;
+      width: 40%;
       display: flex;
       justify-content: center;
       align-items: center;
       .superhero-img {
+        width: 120%;
         opacity: 0;
         animation: superhero-fly 1s ease-out 0.8s forwards;
       }
