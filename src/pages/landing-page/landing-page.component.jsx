@@ -16,7 +16,7 @@ const LandingPage = () => (
     <section className="welcome">
       <div className="welcome-left">
         <h1 className="slogan">
-          <span className="highlight">Superpoders</span> per a mestres creatius
+          <span className="highlight">Superpoders</span> per a mestres creatius/ves
         </h1>
         <p className="description">
           Totes les eines que necessites per dinamitzar i planificar les teves
